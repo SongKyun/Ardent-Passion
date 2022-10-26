@@ -51,5 +51,14 @@
     <ClCompile Include="RefReturnTwo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="RefReturnThree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RefReturnOne2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="02-2-1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

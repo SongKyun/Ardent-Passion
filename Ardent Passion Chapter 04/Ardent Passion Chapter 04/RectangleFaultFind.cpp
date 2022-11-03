@@ -16,10 +16,10 @@ int main()
 		cout << "초기화 실패" << endl;
 
 	Rectangle rec;
-	if (!rec.InitMembers(pos1, pos2))
+	if (!rec.InitMember(pos1, pos2))
 		cout << "직사각형 초기화 실패" << endl;
 
-	if (!rec.InitMembers(pos1, pos2))
+	if (!rec.InitMember(pos1, pos2))
 		cout << "직사각형 초기화 실패" << endl;
 
 	rec.ShowRecInfo();

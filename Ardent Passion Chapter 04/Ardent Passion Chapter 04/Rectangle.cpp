@@ -2,7 +2,7 @@
 #include "Rectangle.h"
 using namespace std;
 
-bool Rectangle::InitMembers(const Point &ul, const Point &lr)
+bool Rectangle::InitMember(const Point &ul, const Point &lr)
 {
 	if (ul.GetX() > lr.GetX() || ul.GetY() > lr.GetY())
 	{

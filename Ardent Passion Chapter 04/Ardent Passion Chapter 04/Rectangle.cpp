@@ -2,7 +2,13 @@
 #include "Rectangle.h"
 using namespace std;
 
-bool Rectangle::InitMember(const Point &ul, const Point &lr)
+Rectangle::Rectangle(const int& x1, const int& y1, const int& x2, const int& y2)
+	:upLeft(x1, y1), lowRight(x2, y2)
+{
+
+}
+
+/*bool Rectangle::InitMember(const Point& ul, const Point& lr)
 {
 	if (ul.GetX() > lr.GetX() || ul.GetY() > lr.GetY())
 	{
@@ -12,7 +18,7 @@ bool Rectangle::InitMember(const Point &ul, const Point &lr)
 	upLeft = ul;
 	lowRight = lr;
 	return true;
-}
+}*/
 
 void Rectangle::ShowRecInfo() const
 {

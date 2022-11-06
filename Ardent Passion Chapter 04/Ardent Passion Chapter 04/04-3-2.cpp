@@ -64,6 +64,6 @@ public:
 int main()
 {
 	NameCard manClerk("Lee", "ABCEng", "010-222-2221", COMP_POS::CLERK)
-		...
+		
 
 }

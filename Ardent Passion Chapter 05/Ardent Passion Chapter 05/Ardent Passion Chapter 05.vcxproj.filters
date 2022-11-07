@@ -15,10 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="BankinSystemVer01.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="BankingSystemVer02.cpp">
+    <ClCompile Include="ClassInit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

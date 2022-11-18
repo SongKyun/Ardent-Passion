@@ -18,5 +18,11 @@
     <ClCompile Include="EmployeeManager1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="UnivStudentInheri.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="DerivCreOrder.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

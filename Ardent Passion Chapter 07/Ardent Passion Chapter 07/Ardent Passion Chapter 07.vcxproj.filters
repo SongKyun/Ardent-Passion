@@ -48,5 +48,11 @@
     <ClCompile Include="HASComposite.cpp">
       <Filter>소스파일</Filter>
     </ClCompile>
+    <ClCompile Include="07-2-1.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
+    <ClCompile Include="07-2-2.cpp">
+      <Filter>소스파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

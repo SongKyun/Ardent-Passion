@@ -17,14 +17,10 @@ public:
 		cout << "name: " << name << endl;
 	}
 
-	// 가상 함수 추가.
-	virtual int GetPay() const
-	{
-		return 0;
-	}
-	// 가상 함수 추가.
-	virtual void ShowSalaryInfo() const
-	{ }
+	// 가상 함수 추가. // 순수 가상 함수
+	virtual int GetPay() const = 0;
+	// 가상 함수 추가. // 순수 가상 함수
+	virtual void ShowSalaryInfo() const = 0;
 };
 
 class PermanentWorker : public Employee // 이전의 클래스와의 차이점은 Employee 클래스를 상속한다는 점이다. 때문에 이름과 관련된 멤버는 모두 제거하였다.
@@ -119,10 +115,15 @@ public:
 
 	int GetRiskPay() const
 	{
-		return (int)(SalesWorker::GetPay() + GetRiskPay());
+		return (int)(SalesWorker::GetPay() * (riskLevel/100.0));
 	}
 
 	int GetPay() const
+	{
+		return SalesWorker::GetPay() + GetRiskPay();
+	}
+
+	void ShowSalaryInfo() const
 	{
 		ShowYourName();
 		cout << "salary: " << SalesWorker::GetPay() << endl;
@@ -181,12 +182,12 @@ int main()
 
 	ForeignSalesWorker* fseller2
 		= new ForeignSalesWorker("Yoon", 1000, 0.1, RISK_LEVEL::RISK_B);
-	fseller1->AddSalesResult(7000); // 영업실적 7000
+	fseller2->AddSalesResult(7000); // 영업실적 7000
 	handler.AddEmployee(fseller2);
 
 	ForeignSalesWorker* fseller3
 		= new ForeignSalesWorker("Lee", 1000, 0.1, RISK_LEVEL::RISK_C);
-	fseller1->AddSalesResult(7000); // 영업실적 7000
+	fseller3->AddSalesResult(7000); // 영업실적 7000
 	handler.AddEmployee(fseller3);
 
 

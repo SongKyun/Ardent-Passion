@@ -1,7 +1,7 @@
 #include "BankingCommonDecl.h"
 #include "Account.h"
 
-Account::Account(int ID, int money, const char* name)
+Account::Account(int ID, int money, char* name)
 	: accID(ID), balance(money)
 {
 	cusName = new char[strlen(name) + 1];
@@ -9,7 +9,7 @@ Account::Account(int ID, int money, const char* name)
 }
 
 Account::Account(const Account& ref)
-	: accId(ref.accID), balance(ref.balance)
+	: accID(ref.accID), balance(ref.balance)
 {
 	cusName = new char[strlen(ref.cusName) + 1];
 	strcpy(cusName, ref.cusName);

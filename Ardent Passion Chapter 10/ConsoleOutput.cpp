@@ -48,8 +48,8 @@ namespace mystd // cout과 endl을 직접 구현하기 위해서 선언한 이름공간이다.
 
 int main()
 {
-	using mystd::cout; // 이름공간 mystd 내에 선언된 cout과 endl의 사용을 위해서 지역적으로 using 선언을 하였다.
-	using mystd::endl;// 따라서 main 함수 내에서의 cout과 endl은 이름공간 mystd 내에 선언된 것을 의미한다.
+	using std::cout; // 이름공간 mystd 내에 선언된 cout과 endl의 사용을 위해서 지역적으로 using 선언을 하였다.
+	using std::endl;// 따라서 main 함수 내에서의 cout과 endl은 이름공간 mystd 내에 선언된 것을 의미한다.
 
 	cout << "Simple String";
 	cout << endl;

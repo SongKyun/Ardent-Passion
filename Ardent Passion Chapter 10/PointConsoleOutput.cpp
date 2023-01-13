@@ -30,4 +30,4 @@ int main()
 	Point pos2(101, 303);
 	cout << pos2;
 	return 0;
-}
+}	

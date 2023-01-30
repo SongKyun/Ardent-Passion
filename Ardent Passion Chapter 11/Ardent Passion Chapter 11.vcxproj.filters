@@ -48,5 +48,11 @@
     <ClCompile Include="11-2-1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="NewDeleteOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ArrayNewDeleteOverloading.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

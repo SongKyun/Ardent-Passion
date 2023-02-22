@@ -3,22 +3,25 @@
 #ifndef __ACCOUNT_H__
 #define __ACCOUNT_H__
 
+#include "String.h" // 09
+
 class Account
 {
 private:
 	int accID;
 	int balance;
-	char* cusName;
+	String cusName; // char* cusName; 09
 public:
-	Account(int ID, int money, char* name);
-	Account(const Account& ref);
-	Account& operator=(const Account& ref); // 08 추가 문장
+	Account(int ID, int money, String name);
+	// Account(int ID, int money, char* name); 09
+	// Account(const Account& ref); 09
+	// Account& operator=(const Account& ref); // 08 추가 문장 09
 
 	int GetAccID() const;
 	virtual void Deposit(int money);
 	int Withdraw(int money);
 	void ShowAccInfo() const;
-	~Account();
+	// ~Account(); 09
 };
 
 #endif

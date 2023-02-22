@@ -3,6 +3,7 @@
 #include "Account.h"
 #include "NormalAccount.h"
 #include "HighCreditAccount.h"
+#include "String.h" // 09
 
 void AccountHandler::ShowMenu() const
 {
@@ -32,7 +33,8 @@ void AccountHandler::MakeAccount()
 void AccountHandler::MakeNormalAccount()
 {
 	int id;
-	char name[NAME_LEN];
+	// char name[NAME_LEN]; 09
+	String name; // 09
 	int balance;
 	int interRate;
 
@@ -48,7 +50,8 @@ void AccountHandler::MakeNormalAccount()
 void AccountHandler::MakeCreditAccount()
 {
 	int id;
-	char name[NAME_LEN];
+	//char name[NAME_LEN]; 09
+	String name; // 09
 	int balance;
 	int interRate;
 	int creditLevel;

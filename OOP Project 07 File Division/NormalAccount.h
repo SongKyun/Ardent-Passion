@@ -4,13 +4,15 @@
 #define __NORMAL_ACCOUNT_H__
 
 #include "Account.h"
+#include "String.h" // 09
 
 class NormalAccount : public Account
 {
 private:
 	int interRate; // 이자율 %단위
 public:
-	NormalAccount(int ID, int money, char * name, int rate)
+	// NormalAccount(int ID, int money, char * name, int rate) 09
+	NormalAccount(int ID, int money, String name, int rate)
 		: Account(ID, money, name), interRate(rate)
 	{ }
 
